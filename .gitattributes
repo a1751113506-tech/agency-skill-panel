@@ -1,0 +1,10 @@
+# Normalize line endings to LF in the repository.
+#
+# This matters here: the panel rewrites SKILL.md frontmatter and must preserve
+# whatever line ending the file already uses. Keeping the repo LF avoids
+# shipping CRLF that only shows up on Windows.
+* text=auto eol=lf
+
+# Windows-only helpers stay native
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

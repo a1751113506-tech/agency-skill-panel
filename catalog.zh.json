@@ -1,0 +1,1441 @@
+{
+  "divisions": {
+    "academic": "学术研究",
+    "design": "设计",
+    "engineering": "工程研发",
+    "finance": "财务",
+    "game-development": "游戏开发",
+    "gis": "地理信息",
+    "healthcare": "医疗健康",
+    "marketing": "市场营销",
+    "paid-media": "付费投放",
+    "product": "产品",
+    "project-management": "项目管理",
+    "research": "研究",
+    "sales": "销售",
+    "security": "安全",
+    "spatial-computing": "空间计算",
+    "specialized": "专业专项",
+    "support": "综合支持",
+    "testing": "测试"
+  },
+  "skills": {
+    "agency-anthropologist": [
+      "人类学家",
+      "文化系统、仪式、亲属关系与信仰体系专家，能把虚构社会写得像真的存在过。"
+    ],
+    "agency-geographer": [
+      "地理学家",
+      "自然与人文地理、气候系统、地图学，让地形气候资源与聚落彼此自洽。"
+    ],
+    "agency-historian": [
+      "历史学家",
+      "断代、物质文化与史学方法，用一手二手史料校验历史设定。"
+    ],
+    "agency-narratologist": [
+      "叙事学家",
+      "叙事理论、故事结构与人物弧光，从普罗普到坎贝尔都有据可依。"
+    ],
+    "agency-psychologist": [
+      "心理学家",
+      "人格理论、动机与认知模式，写出心理上站得住的人物与互动。"
+    ],
+    "agency-statistician": [
+      "统计学家",
+      "研究方法与实验设计，专挑结论里混着噪声和偏差的地方。"
+    ],
+    "agency-brand-guardian": [
+      "品牌守护者",
+      "品牌识别、一致性维护与战略定位。"
+    ],
+    "agency-image-prompt-engineer": [
+      "图像提示词工程师",
+      "摄影级出图提示词，把视觉概念翻成精确语言。"
+    ],
+    "agency-inclusive-visuals-specialist": [
+      "多元视觉专家",
+      "对抗模型固有偏见，产出文化上准确、不带刻板印象的图像与视频。"
+    ],
+    "agency-persona-walkthrough-specialist": [
+      "用户角色走查专家",
+      "按人物画像逐屏模拟认知走查，记录每屏的情绪与判断，输出转化率报告。"
+    ],
+    "agency-ui-designer": [
+      "UI 设计师",
+      "视觉设计体系、组件库与像素级界面。"
+    ],
+    "agency-ui-finish-gate-reviewer": [
+      "UI 成品验收官",
+      "上线前拦住「换个名字就能套在别家」的通用界面，靠证据和设计契约说话。"
+    ],
+    "agency-ux-architect": [
+      "UX 架构师",
+      "给开发落地的基础设施：CSS 体系、技术架构与实现指引。"
+    ],
+    "agency-ux-researcher": [
+      "用户研究员",
+      "用户行为分析、可用性测试与数据驱动的设计洞察。"
+    ],
+    "agency-visual-storyteller": [
+      "视觉叙事师",
+      "把复杂信息变成有情绪张力的视觉故事。"
+    ],
+    "agency-whimsy-injector": [
+      "趣味注入师",
+      "给品牌加性格、微交互与彩蛋，让体验记得住。"
+    ],
+    "agency-ai-data-remediation-engineer": [
+      "AI 数据修复工程师",
+      "自愈式数据管道：断网环境本地小模型加语义聚类，定位并修数据异常，保证零丢失。"
+    ],
+    "agency-ai-engineer": [
+      "AI 工程师",
+      "模型开发、部署与生产集成，偏可落地的数据管道与智能功能。"
+    ],
+    "agency-api-platform-engineer": [
+      "API 平台工程师",
+      "对外与合作方 API：契约优先、版本与弃用策略、SDK 生成、网关限流。"
+    ],
+    "agency-ats-validator-architect": [
+      "简历解析与 ATS 架构师",
+      "简历可解析性、BM25 打分、版面线性化审计，兼顾欧盟 AI 法与纽约 LL144。"
+    ],
+    "agency-autonomous-optimization-architect": [
+      "自治优化架构师",
+      "影子测试接口性能，同时用成本与安全护栏管住失控花销。"
+    ],
+    "agency-backend-architect": [
+      "后端架构师",
+      "可扩展系统设计、数据库架构、API 与云基础设施。"
+    ],
+    "agency-china-network-engineer": [
+      "国内网络工程师",
+      "华为 VRP、H3C Comware、锐捷 RGOS、山石 StoneOS，含等保 2.0 边界设计。"
+    ],
+    "agency-cms-developer": [
+      "CMS 开发",
+      "WordPress 与 Drupal 的主题、插件模块与内容架构，代码优先。"
+    ],
+    "agency-code-reviewer": [
+      "代码审查员",
+      "只挑正确性、可维护性、安全与性能，不纠缠风格偏好。"
+    ],
+    "agency-codebase-onboarding-engineer": [
+      "代码库上手工程师",
+      "带新人快速读懂陌生仓库，只陈述代码里的事实。"
+    ],
+    "agency-data-engineer": [
+      "数据工程师",
+      "可靠数据管道、湖仓架构、ETL/ELT 与流式系统。"
+    ],
+    "agency-data-visualization-engineer": [
+      "数据可视化工程师",
+      "按数据和问题选图，编码诚实、色盲友好，大数据量也流畅。"
+    ],
+    "agency-database-optimizer": [
+      "数据库优化师",
+      "表设计、查询优化与索引策略，PostgreSQL、MySQL 及 Supabase、PlanetScale。"
+    ],
+    "agency-database-reliability-engineer": [
+      "数据库可靠性工程师",
+      "高可用与复制、自动故障转移、按时间点恢复、零停机在线改表。"
+    ],
+    "agency-desktop-app-engineer": [
+      "桌面应用工程师",
+      "Electron 与 Tauri：安全 IPC 与进程隔离、签名公证、自动更新。"
+    ],
+    "agency-developer-tooling-engineer": [
+      "开发者工具工程师",
+      "命令行工具与内部平台：命令设计、报错可读、补全、跨平台分发。"
+    ],
+    "agency-devops-automator": [
+      "DevOps 自动化",
+      "基础设施自动化、CI/CD 流水线与云运维。"
+    ],
+    "agency-drupal-performance-engineer": [
+      "Drupal 性能工程师",
+      "核心网页指标、页面与动态缓存、BigPipe、Views 查询优化与 PHP-FPM 调优。"
+    ],
+    "agency-drupal-shopping-cart-engineer": [
+      "Drupal 电商工程师",
+      "Drupal Commerce 的商品目录、支付、结算与订单管理。"
+    ],
+    "agency-electrical-engineer": [
+      "电气工程师",
+      "站点供电：负荷、电缆、电池、整流、发电机、接地防雷，可审图审清单。"
+    ],
+    "agency-email-intelligence-engineer": [
+      "邮件智能工程师",
+      "从原始邮件线程抽取结构化数据，喂给 AI 做推理。"
+    ],
+    "agency-embedded-firmware-engineer": [
+      "嵌入式固件工程师",
+      "裸机与实时系统：ESP32、STM32、Nordic、FreeRTOS、Zephyr。"
+    ],
+    "agency-feishu-integration-developer": [
+      "飞书集成开发",
+      "机器人、小程序、审批流、多维表格、消息卡片与单点登录。"
+    ],
+    "agency-filament-optimization-specialist": [
+      "Filament 优化师",
+      "重构 Filament 的资源、表单与表格，做结构性改造而非换皮。"
+    ],
+    "agency-finops-engineer": [
+      "云成本工程师",
+      "成本分摊与标签、规格下调、预留与节省计划、单位经济模型。"
+    ],
+    "agency-frontend-developer": [
+      "前端开发",
+      "React、Vue、Angular，界面实现与性能优化。"
+    ],
+    "agency-gaussdb-expert-engineer": [
+      "GaussDB 专家",
+      "华为 GaussDB 联机事务库：分布式表设计、查询优化、Ustore、高可用与迁移。"
+    ],
+    "agency-git-workflow-master": [
+      "Git 工作流高手",
+      "分支策略、约定式提交、rebase、worktree 与对 CI 友好的历史。"
+    ],
+    "agency-internationalization-engineer": [
+      "国际化工程师",
+      "ICU 消息格式、CLDR 复数规则、从右到左与双向排版、伪本地化测试。"
+    ],
+    "agency-identity-access-engineer": [
+      "身份与权限工程师",
+      "OAuth 与 OIDC、企业单点登录、SCIM、通行密钥、多租户 RBAC 与 ABAC。"
+    ],
+    "agency-incident-response-commander": [
+      "事故指挥",
+      "生产事故响应、复盘主持、SLO 与 SLI、值班体系设计。"
+    ],
+    "agency-iot-fleet-engineer": [
+      "物联网设备集群工程师",
+      "设备发放与身份、MQTT 遥测、分批固件升级与回滚、边缘计算。"
+    ],
+    "agency-it-service-manager": [
+      "IT 服务经理",
+      "ITIL 4：服务目录、事件与问题管理、变更控制、SLA 与配置库。"
+    ],
+    "agency-knowledge-graph-engineer": [
+      "知识图谱工程师",
+      "把文档结构成可查的实体关系图，带溯源、矛盾追踪与子图检索。"
+    ],
+    "agency-llm-post-training-engineer": [
+      "大模型后训练工程师",
+      "SFT、DPO、GRPO、RLVR，用实验闸门和检查点完整性管住发布。"
+    ],
+    "agency-minimal-change-engineer": [
+      "最小改动工程师",
+      "只改该改的那几行，坚决不做顺手重构。"
+    ],
+    "agency-mobile-app-builder": [
+      "移动应用构建者",
+      "原生 iOS 与安卓，以及 React Native、Flutter。"
+    ],
+    "agency-mobile-release-engineer": [
+      "移动发布工程师",
+      "签名与描述文件、fastlane、商店提审、分批放量与崩溃归因。"
+    ],
+    "agency-multi-agent-systems-architect": [
+      "多智能体架构师",
+      "拓扑选型、上下文管理、智能体间信任、故障恢复与人在环。"
+    ],
+    "agency-network-engineer": [
+      "网络工程师",
+      "思科 IOS 与 IOS-XE、ASA 与 FTD、Juniper Junos、Palo Alto 的路由交换防火墙排障。"
+    ],
+    "agency-orgscript-engineer": [
+      "OrgScript 工程师",
+      "OrgScript 文法与语法树校验、业务逻辑定义。"
+    ],
+    "agency-payments-billing-engineer": [
+      "支付与计费工程师",
+      "Stripe、Adyen、Braintree，幂等支付流、回调处理、订阅计费与对账。"
+    ],
+    "agency-pdf-engine-architect": [
+      "PDF 引擎架构师",
+      "确定性 HTML 转 PDF、Playwright 渲染池、动态分页、无障碍与归档 PDF 标准。"
+    ],
+    "agency-platform-engineer": [
+      "平台工程师",
+      "内部开发者平台：黄金路径、自助式基础设施、开发者体验度量。"
+    ],
+    "agency-privacy-engineer": [
+      "隐私工程师",
+      "把隐私写进代码：个人信息识别分级、最小化、数据主体请求与删除、脱敏与留存自动化。"
+    ],
+    "agency-prompt-engineer": [
+      "提示词工程师",
+      "把模糊指令调成稳定可复现的模型行为。"
+    ],
+    "agency-rag-pipeline-engineer": [
+      "RAG 管道工程师",
+      "切片策略、混合检索、重排序，用评测驱动迭代。"
+    ],
+    "agency-rapid-prototyper": [
+      "快速原型师",
+      "极速做概念验证与最小可用产品。"
+    ],
+    "agency-realtime-collaboration-engineer": [
+      "实时协作工程师",
+      "WebSocket 与 SSE、在线状态、协同编辑、离线同步与重连安全协议。"
+    ],
+    "agency-rust-refactoring-specialist": [
+      "Rust 重构专家",
+      "仓库级重构：安全重命名、模块重组、恐慌加固、Clippy 清零。"
+    ],
+    "agency-search-relevance-engineer": [
+      "搜索相关性工程师",
+      "Elasticsearch 与 OpenSearch：索引与分析器、BM25 调优、混合检索、相关性评测。"
+    ],
+    "agency-section-508-accessibility-specialist": [
+      "508 无障碍专家",
+      "美国联邦 508 与 WCAG、ARIA、读屏实测、无障碍合规报告撰写。"
+    ],
+    "agency-senior-developer": [
+      "资深开发",
+      "Laravel、Livewire、FluxUI、进阶 CSS 与 Three.js 集成。"
+    ],
+    "agency-servicenow-developer-mentor": [
+      "ServiceNow 开发导师",
+      "业务规则、脚本包含、GlideAjax、访问控制、流程设计器与逐步排障。"
+    ],
+    "agency-software-architect": [
+      "软件架构师",
+      "系统设计、领域驱动、架构模式与取舍分析。"
+    ],
+    "agency-solidity-smart-contract-engineer": [
+      "Solidity 合约工程师",
+      "以太坊合约架构、gas 优化、可升级代理、DeFi 与安全优先设计。"
+    ],
+    "agency-sre-site-reliability-engineer": [
+      "站点可靠性工程师",
+      "SLO、错误预算、可观测性、混沌工程与减负。"
+    ],
+    "agency-technical-writer": [
+      "技术写手",
+      "开发者文档、接口参考与教程，写得让人真愿意读。"
+    ],
+    "agency-universal-document-compiler": [
+      "通用文档编译器",
+      "与数据结构无关的文档中间表示、按数据形状推断版式、成套出版。"
+    ],
+    "agency-uswds-developer": [
+      "美国联邦设计系统开发",
+      "美国网页设计系统组件与设计变量、无障碍默认值、政府站点界面。"
+    ],
+    "agency-video-streaming-engineer": [
+      "视频流媒体工程师",
+      "HLS 与 DASH 打包、ffmpeg 转码梯度、低延迟、数字版权、CDN 与播放质量调优。"
+    ],
+    "agency-voice-ai-integration-engineer": [
+      "语音 AI 集成工程师",
+      "Whisper 类模型与云端语音识别：预处理、转写清洗、字幕与说话人分离。"
+    ],
+    "agency-webassembly-engineer": [
+      "WebAssembly 工程师",
+      "Rust、C++、Go 编译到 Wasm、JS 边界开销、WASI 与服务端运行时。"
+    ],
+    "agency-wechat-mini-program-developer": [
+      "微信小程序开发",
+      "WXML、WXSS、WXS、微信接口、支付、订阅消息与整个微信生态。"
+    ],
+    "agency-wordpress-performance-engineer": [
+      "WordPress 性能工程师",
+      "对象缓存、页面缓存、WP_Query 优化、资源延迟与 PHP-FPM 调优。"
+    ],
+    "agency-wordpress-shopping-cart-engineer": [
+      "WordPress 电商工程师",
+      "WooCommerce：目录、支付、结算定制、税费优惠券与转化优化。"
+    ],
+    "agency-bookkeeper-controller": [
+      "记账与内控",
+      "日常账务、对账、月末结账与内控，保证合规并且随时可审计。"
+    ],
+    "agency-financial-analyst": [
+      "财务分析师",
+      "财务建模、预测、情景分析与决策支持。"
+    ],
+    "agency-fp-a-analyst": [
+      "财务规划与分析",
+      "预算、差异分析、滚动预测，把数字和业务叙事对上。"
+    ],
+    "agency-investment-researcher": [
+      "投资研究员",
+      "市场调研、尽职调查、组合分析与资产估值。"
+    ],
+    "agency-tax-strategist": [
+      "税务策略师",
+      "多辖区税务优化、转让定价与合规筹划。"
+    ],
+    "agency-blender-add-on-engineer": [
+      "Blender 插件工程师",
+      "写 Python 插件、资产校验与导出器，把重复的建模软件操作变一键。"
+    ],
+    "agency-economy-designer": [
+      "游戏经济系统设计师",
+      "虚拟货币、产出与消耗、商业化建模、通胀控制与数据驱动平衡。"
+    ],
+    "agency-game-audio-engineer": [
+      "游戏音频工程师",
+      "FMOD 与 Wwise 集成、自适应音乐、空间音频与音频性能预算。"
+    ],
+    "agency-game-designer": [
+      "游戏设计师",
+      "系统与机制：设计文档撰写、玩家心理、经济平衡与核心循环。"
+    ],
+    "agency-godot-gameplay-scripter": [
+      "Godot 玩法脚本",
+      "GDScript 2.0、C# 集成、节点架构与类型安全信号。"
+    ],
+    "agency-godot-multiplayer-engineer": [
+      "Godot 联机工程师",
+      "多人接口、场景复制、ENet 与 WebRTC、远程调用与权威模型。"
+    ],
+    "agency-godot-shader-developer": [
+      "Godot 着色器开发",
+      "Godot 着色语言、视觉着色器、2D 与 3D 特效与性能优化。"
+    ],
+    "agency-level-designer": [
+      "关卡设计师",
+      "布局理论、节奏、遭遇设计与环境叙事。"
+    ],
+    "agency-narrative-designer": [
+      "叙事设计师",
+      "与设计文档对齐的分支对话、世界观架构与环境叙事。"
+    ],
+    "agency-roblox-avatar-creator": [
+      "Roblox 虚拟形象作者",
+      "用户生成物品、配件绑定、贴图规范与创作者 marketplace 提交流程。"
+    ],
+    "agency-roblox-experience-designer": [
+      "Roblox 体验设计师",
+      "留存循环、数据存储进度、通行证与开发者产品变现。"
+    ],
+    "agency-roblox-systems-scripter": [
+      "Roblox 系统脚本",
+      "Luau、客户端与服务端安全模型、远程事件与数据存储、模块化架构。"
+    ],
+    "agency-technical-artist": [
+      "技术美术",
+      "着色器、特效系统、细节层级管线与跨引擎资产优化。"
+    ],
+    "agency-unity-architect": [
+      "Unity 架构师",
+      "用可脚本化对象做模块化、解耦系统与单一职责组件。"
+    ],
+    "agency-unity-editor-tool-developer": [
+      "Unity 编辑器工具开发",
+      "自定义编辑器窗口、属性绘制器、导入后处理器与管线自动化。"
+    ],
+    "agency-unity-multiplayer-engineer": [
+      "Unity 联机工程师",
+      "游戏对象网络编码、中继与大厅、服务端权威、延迟补偿与状态同步。"
+    ],
+    "agency-unity-shader-graph-artist": [
+      "Unity 着色器美工",
+      "着色器图、HLSL、通用与高清渲染管线、自定义 Pass。"
+    ],
+    "agency-unreal-multiplayer-architect": [
+      "Unreal 联机架构师",
+      "Actor 复制、游戏模式与状态、服务端权威、网络预测与专用服务器。"
+    ],
+    "agency-unreal-systems-engineer": [
+      "Unreal 系统工程师",
+      "C++ 与蓝图分工、Nanite、Lumen 与技能系统。"
+    ],
+    "agency-unreal-technical-artist": [
+      "Unreal 技术美术",
+      "材质编辑器、Niagara 特效、程序化内容生成与美术到引擎的管线。"
+    ],
+    "agency-unreal-world-builder": [
+      "Unreal 世界构建",
+      "世界分区、地形、程序化植被、分层细节与大规模流送。"
+    ],
+    "agency-3d-scene-developer": [
+      "3D 场景开发",
+      "Cesium 与 ArcGIS 场景查看器做地形、点云与可交互网页 3D。"
+    ],
+    "agency-gis-analyst": [
+      "GIS 分析师",
+      "日常制图、图层管理、空间查询与地理数据完整性。"
+    ],
+    "agency-bim-gis-specialist": [
+      "BIM 与 GIS 专家",
+      "Revit 与 IFC 转换、室内地图、数字孪生架构与设施管理数据模型。"
+    ],
+    "agency-cartography-designer": [
+      "地图美学设计师",
+      "配色、字体、标注排布、底图选择与视觉层次。"
+    ],
+    "agency-drone-reality-mapping-specialist": [
+      "无人机实景建模",
+      "航片转正射影像、地形模型、点云分类与三维网格。"
+    ],
+    "agency-geoai-ml-engineer": [
+      "地理 AI 工程师",
+      "用卫星与航片做要素提取、目标检测、分割与地表分类。"
+    ],
+    "agency-geoprocessing-specialist": [
+      "地理处理专家",
+      "ArcPy 与 Python 工具箱、模型构建器、批量地理处理自动化。"
+    ],
+    "agency-gis-qa-engineer": [
+      "GIS 质检工程师",
+      "拓扑检查、元数据审计、坐标系一致性与精度评估。"
+    ],
+    "agency-solution-engineer": [
+      "GIS 方案工程师",
+      "把策略落成能跑的演示与概念验证，贯通 Esri 与开源栈。"
+    ],
+    "agency-spatial-data-engineer": [
+      "空间数据工程师",
+      "把各类脏地理数据洗成标准化、可上生产的数据集。"
+    ],
+    "agency-spatial-data-scientist": [
+      "空间数据科学家",
+      "空间统计、空间计量、聚类与预测建模。"
+    ],
+    "agency-technical-consultant": [
+      "GIS 技术顾问",
+      "把业务问题翻成地理方案：差距分析、技术路线、标书与数字化转型。"
+    ],
+    "agency-web-gis-developer": [
+      "网页 GIS 开发",
+      "MapLibre GL、ArcGIS JS、Leaflet 做交互地图与实时看板。"
+    ],
+    "agency-clinical-evidence-agent": [
+      "临床证据顾问",
+      "区分已验证与未验证的临床主张，写东西不越诊断边界。"
+    ],
+    "agency-healthcare-innovation-strategist": [
+      "医疗创新叙事策略师",
+      "帮医疗创始人对齐投资人、监管、主权与临床四类听众。"
+    ],
+    "agency-sovereign-health-systems-agent": [
+      "主权卫生体系顾问",
+      "对接国家卫生主管与全民健康覆盖政策，规划双市场落地。"
+    ],
+    "agency-aeo-foundations-architect": [
+      "AI 引擎优化基础设施",
+      "部署 llms.txt、面向 AI 的爬虫声明、结构化 Markdown，让 AI 能抓能解析。"
+    ],
+    "agency-agentic-search-optimizer": [
+      "智能体检索优化师",
+      "审计 AI 浏览代理能否在你站上真正完成任务（订、买、注册），并落地 WebMCP。"
+    ],
+    "agency-ai-citation-strategist": [
+      "AI 引用策略师",
+      "审计品牌在主流 AI 里的可见度，找出为什么被引用的是竞品。"
+    ],
+    "agency-app-store-optimizer": [
+      "应用商店优化师",
+      "应用商店优化、转化率提升与应用可发现性。"
+    ],
+    "agency-baidu-seo-specialist": [
+      "百度 SEO 专家",
+      "中文搜索排名、百度生态接入、备案合规、中文关键词与移动优先收录。"
+    ],
+    "agency-bilibili-content-strategist": [
+      "B 站内容策略师",
+      "UP 主成长、弹幕文化、B 站算法、社群运营与品牌内容。"
+    ],
+    "agency-book-co-author": [
+      "图书共创者",
+      "把语音笔记与零散观点整理成第一人称的成书章节。"
+    ],
+    "agency-carousel-growth-engine": [
+      "轮播图增长引擎",
+      "抓站生成六屏病毒式轮播，按数据回流迭代优化。"
+    ],
+    "agency-china-e-commerce-operator": [
+      "国内电商运营",
+      "淘宝、天猫、拼多多、京东：上架优化、直播、店铺运营与 618、双 11 大促。"
+    ],
+    "agency-china-market-localization-strategist": [
+      "中国市场本地化策略师",
+      "把实时趋势信号变成抖音、小红书、微信、B 站的可执行打法。"
+    ],
+    "agency-content-creator": [
+      "内容创作者",
+      "多平台内容策略、编辑日历、文案与品牌叙事。"
+    ],
+    "agency-cross-border-e-commerce-specialist": [
+      "跨境电商专家",
+      "亚马逊、Shopee、Lazada、Temu、TikTok Shop，含物流、合规、多语 listing 与独立站。"
+    ],
+    "agency-developer-community-builder": [
+      "开发者社区建设",
+      "经营 Discord、GitHub 讨论区与贡献者计划，把用户变拥护者。"
+    ],
+    "agency-douyin-strategist": [
+      "抖音策略师",
+      "推荐算法机制、爆款策划、直播带货流程与内容矩阵。"
+    ],
+    "agency-email-marketing-strategist": [
+      "邮件营销策略师",
+      "生命周期自动化、分层架构与送达率，含 AI 个性化与隐私新政后的度量。"
+    ],
+    "agency-global-podcast-strategist": [
+      "播客增长策略师",
+      "节目定位、听众增长与变现，覆盖 Spotify、Apple 与 YouTube。"
+    ],
+    "agency-growth-hacker": [
+      "增长黑客",
+      "数据驱动实验、病毒循环与转化漏斗优化。"
+    ],
+    "agency-instagram-curator": [
+      "Instagram 运营",
+      "视觉风格、多格式内容与社区互动。"
+    ],
+    "agency-kuaishou-strategist": [
+      "快手策略师",
+      "下沉市场短视频、直播电商、老铁信任与草根增长。"
+    ],
+    "agency-linkedin-content-creator": [
+      "LinkedIn 内容专家",
+      "思想领导力、个人品牌与高互动的专业内容。"
+    ],
+    "agency-livestream-commerce-coach": [
+      "直播电商教练",
+      "主播训练、话术设计、商品排序、付费与自然流量配比、实时数据调优。"
+    ],
+    "agency-multi-platform-publisher": [
+      "多平台一键分发",
+      "一篇文章路由到知乎、小红书、CSDN、B 站、公众号、掘金，草稿优先不自动发布。"
+    ],
+    "agency-podcast-strategist": [
+      "中文播客策略师",
+      "小宇宙与喜马拉雅为主：定位、制作、增长、多平台分发与变现。"
+    ],
+    "agency-pr-communications-manager": [
+      "公关传播经理",
+      "媒体关系、新闻稿、危机沟通、高管观点与声誉管理。"
+    ],
+    "agency-private-domain-operator": [
+      "私域运营",
+      "企业微信 SCRM、分层社群、小程序电商与全链路转化。"
+    ],
+    "agency-reddit-community-builder": [
+      "Reddit 社区运营",
+      "先当有价值的社区成员，再谈品牌，靠长期关系建立信任。"
+    ],
+    "agency-seo-specialist": [
+      "SEO 专家",
+      "技术 SEO、内容优化、外链与自然流量增长。"
+    ],
+    "agency-short-video-editing-coach": [
+      "短视频剪辑教练",
+      "剪映专业版、Premiere、达芬奇、Final Cut 全流程：镜头语言、调色、音频、动效、字幕与多平台导出。"
+    ],
+    "agency-social-media-strategist": [
+      "社交媒体策略师",
+      "LinkedIn、Twitter 等专业平台的跨平台战役与社群运营。"
+    ],
+    "agency-tiktok-strategist": [
+      "TikTok 策略师",
+      "爆款内容、算法优化与社区建设。"
+    ],
+    "agency-twitter-engager": [
+      "Twitter 互动",
+      "实时互动、观点领导力与病毒式长推。"
+    ],
+    "agency-video-optimization-specialist": [
+      "视频优化师",
+      "YouTube 算法、留存、章节、封面与跨平台分发。"
+    ],
+    "agency-wechat-official-account-manager": [
+      "公众号运营",
+      "内容营销、订阅者互动与转化，多形态内容运营。"
+    ],
+    "agency-weibo-strategist": [
+      "微博策略师",
+      "热搜机制、超话社群、舆情监测、粉丝经济与微博广告。"
+    ],
+    "agency-x-twitter-intelligence-analyst": [
+      "X 平台情报分析",
+      "用公开信号与结构化数据做趋势探测、账号监控与受众洞察。"
+    ],
+    "agency-xiaohongshu-specialist": [
+      "小红书专家",
+      "生活方式内容、趋势驱动与真实社区互动。"
+    ],
+    "agency-zhihu-strategist": [
+      "知乎策略师",
+      "问答策略与专业知识输出，建立可信度。"
+    ],
+    "agency-paid-media-auditor": [
+      "付费媒体审计师",
+      "两百多项检查点的账户体检，产出带优先级的审计报告。"
+    ],
+    "agency-ad-creative-strategist": [
+      "广告创意策略师",
+      "响应式搜索广告文案、Meta 素材、效果最大化资产组与创意测试框架。"
+    ],
+    "agency-paid-social-strategist": [
+      "付费社交策略师",
+      "Meta、LinkedIn、TikTok、Pinterest、X、Snapchat 全漏斗投放。"
+    ],
+    "agency-ppc-campaign-strategist": [
+      "点击付费战役策略师",
+      "谷歌、微软、亚马逊的账户架构、预算分配与出价策略。"
+    ],
+    "agency-programmatic-display-buyer": [
+      "程序化与展示采买",
+      "展示广告网络、需求方平台、伙伴媒体与基于账号的营销展示。"
+    ],
+    "agency-search-query-analyst": [
+      "搜索词分析师",
+      "搜索词清理、否词架构与查询意图映射。"
+    ],
+    "agency-tracking-measurement-specialist": [
+      "追踪与度量专家",
+      "标签管理、分析工具、广告平台转化回传与服务器端埋点。"
+    ],
+    "agency-behavioral-nudge-engine": [
+      "行为助推引擎",
+      "用行为心理学调节交互节奏与风格，提高用户完成率。"
+    ],
+    "agency-dx-engineer": [
+      "开发者体验工程师",
+      "砍掉开发者到第一次成功之间的所有多余步骤。"
+    ],
+    "agency-feedback-synthesizer": [
+      "反馈综合师",
+      "多渠道用户反馈收集、分析与优先级排序。"
+    ],
+    "agency-product-manager": [
+      "产品经理",
+      "全生命周期：发现、策略、路线图、上线与结果度量。"
+    ],
+    "agency-sprint-prioritizer": [
+      "迭代优先级",
+      "敏捷排期、需求优先级与资源分配。"
+    ],
+    "agency-trend-researcher": [
+      "趋势研究员",
+      "市场情报、竞品分析与机会评估。"
+    ],
+    "agency-experiment-tracker": [
+      "实验追踪",
+      "实验设计、A/B 测试执行跟踪与假设验证。"
+    ],
+    "agency-jira-workflow-steward": [
+      "Jira 工作流管家",
+      "强制 Jira 与 Git 的关联、可追溯提交与发布安全的分支策略。"
+    ],
+    "agency-meeting-notes-specialist": [
+      "会议纪要专家",
+      "从转录或潦草笔记里抽出决定、待办与未决问题。"
+    ],
+    "agency-project-shepherd": [
+      "项目牧羊人",
+      "跨职能协调、时间线管理与干系人对齐。"
+    ],
+    "agency-studio-operations": [
+      "工作室运营",
+      "日常效率、流程优化与资源协调。"
+    ],
+    "agency-studio-producer": [
+      "工作室制作人",
+      "高层创意与技术统筹、资源分配与多项目组合管理。"
+    ],
+    "agency-senior-project-manager": [
+      "资深项目经理",
+      "把规格拆成任务，范围务实、不做后台进程、严格对齐规格。"
+    ],
+    "agency-research-synthesist": [
+      "研究综合师",
+      "文献综述、来源评估与引文追溯，把一堆材料变成诚实加权的证据地图。"
+    ],
+    "agency-account-strategist": [
+      "客户扩展策略师",
+      "落地后扩张、干系人地图、季度业务回顾与净收入留存。"
+    ],
+    "agency-sales-coach": [
+      "销售教练",
+      "话术辅导、通话复盘、管线与预测准确性。"
+    ],
+    "agency-deal-strategist": [
+      "交易策略师",
+      "资格评估、竞争定位与赢单计划。"
+    ],
+    "agency-discovery-coach": [
+      "需求挖掘教练",
+      "SPIN、差距销售、桑德勒方法的问题设计与通话结构。"
+    ],
+    "agency-sales-engineer": [
+      "售前工程师",
+      "技术演示、概念验证范围与竞争作战卡。"
+    ],
+    "agency-offer-lead-gen-strategist": [
+      "报价与获客策略师",
+      "用价值等式搭报价与引流磁铁，多渠道获客。"
+    ],
+    "agency-outbound-strategist": [
+      "外呼策略师",
+      "基于信号的多渠道外呼序列与理想客户画像，靠研究不靠量。"
+    ],
+    "agency-pipeline-analyst": [
+      "销售管线分析师",
+      "管线健康诊断、成交速度、预测准确性与数据驱动辅导。"
+    ],
+    "agency-proposal-strategist": [
+      "标书策略师",
+      "把招标文件变成有说服力的赢单叙事，而不是逐条应答。"
+    ],
+    "agency-ai-generated-code-security-auditor": [
+      "AI 代码安全审计员",
+      "专抓 AI 生成代码默认带的硬编码密钥、失效的行级权限与提示注入汇点。"
+    ],
+    "agency-application-security-engineer": [
+      "应用安全工程师",
+      "威胁建模、安全代码审查、静态与动态扫描接入、开发者安全培训。"
+    ],
+    "agency-security-architect": [
+      "安全架构师",
+      "威胁建模、默认安全架构、信任边界分析与纵深防御。"
+    ],
+    "agency-blockchain-security-auditor": [
+      "区块链安全审计师",
+      "合约漏洞检测、形式化验证、利用分析与审计报告撰写。"
+    ],
+    "agency-cloud-security-architect": [
+      "云安全架构师",
+      "零信任、AWS 与 Azure 与 GCP 纵深防御、基础设施即代码管线从第一天就安全。"
+    ],
+    "agency-compliance-auditor": [
+      "合规审计师",
+      "SOC 2、ISO 27001、HIPAA、支付卡行业标准，从就绪评估到取证到认证。"
+    ],
+    "agency-incident-responder": [
+      "事件响应员",
+      "数字取证与入侵响应：遏制、危机协调与防复发复盘。"
+    ],
+    "agency-penetration-tester": [
+      "渗透测试员",
+      "授权范围内的渗透测试、红队行动与漏洞评估。"
+    ],
+    "agency-secrets-credential-hygiene-engineer": [
+      "密钥与凭据治理工程师",
+      "检测、预防、托管、轮换与泄露响应全生命周期。"
+    ],
+    "agency-senior-secops-engineer": [
+      "资深安全运营工程师",
+      "每次提交先扫密钥与敏感数据，再按安全标准审鉴权、令牌、跨域、内容安全策略与限流。"
+    ],
+    "agency-threat-detection-engineer": [
+      "威胁检测工程师",
+      "安全信息与事件管理规则、攻击技战术覆盖映射、威胁狩猎与检测即代码。"
+    ],
+    "agency-threat-intelligence-analyst": [
+      "威胁情报分析师",
+      "追踪攻击组织、映射攻击技战术、产出可行动情报与检测规则。"
+    ],
+    "agency-macos-spatial-metal-engineer": [
+      "macOS 空间与 Metal 工程师",
+      "Swift 与 Metal 高性能三维渲染，面向 macOS 与 Vision Pro。"
+    ],
+    "agency-terminal-integration-specialist": [
+      "终端集成专家",
+      "终端模拟、文本渲染优化与 SwiftTerm 集成。"
+    ],
+    "agency-visionos-spatial-engineer": [
+      "visionOS 空间工程师",
+      "visionOS 空间计算、SwiftUI 体量界面与液态玻璃设计。"
+    ],
+    "agency-xr-cockpit-interaction-specialist": [
+      "扩展现实座舱交互专家",
+      "沉浸式座舱式控制系统的交互设计。"
+    ],
+    "agency-xr-immersive-developer": [
+      "扩展现实沉浸式开发",
+      "浏览器端 WebXR 的增强与虚拟现实应用。"
+    ],
+    "agency-xr-interface-architect": [
+      "扩展现实界面架构师",
+      "沉浸式环境里的空间交互与界面策略。"
+    ],
+    "agency-accounts-payable-agent": [
+      "应付账款代理",
+      "自动执行供应商付款、外包发票与周期性账单，支持加密货币、法币与稳定币。"
+    ],
+    "agency-agentic-identity-trust-architect": [
+      "智能体身份与信任架构师",
+      "让自主 AI 能证明自己是谁、被授权做什么、实际做了什么。"
+    ],
+    "agency-agents-orchestrator": [
+      "智能体流水线总管",
+      "统筹整个开发流程的自主管道管理者。"
+    ],
+    "agency-automation-governance-architect": [
+      "自动化治理架构师",
+      "以 n8n 为先，上线前先审价值、风险与可维护性。"
+    ],
+    "agency-business-strategist": [
+      "商业战略师",
+      "竞争分析、市场进入、商业模式、增长规划与组织战略。"
+    ],
+    "agency-change-management-consultant": [
+      "变革管理顾问",
+      "ADKAR、科特、Prosci：技术上线、重组、文化转型与并购整合。"
+    ],
+    "agency-chief-financial-officer": [
+      "首席财务官",
+      "资本配置、资金运营、财务规划分析、并购财务、投资者关系与董事会汇报。"
+    ],
+    "agency-corporate-training-designer": [
+      "企业培训设计师",
+      "培训需求分析、课程设计方法论、混合式学习与效果评估。"
+    ],
+    "agency-customer-service": [
+      "客服",
+      "咨询、投诉、账号支持、常见问题与顺畅升级。"
+    ],
+    "agency-customer-success-manager": [
+      "客户成功经理",
+      "上手引导、健康评分、季度回顾、流失预防与续约扩张。"
+    ],
+    "agency-data-consolidation-agent": [
+      "销售数据汇总代理",
+      "把抽取到的销售数据汇成实时报表看板。"
+    ],
+    "agency-data-privacy-officer": [
+      "数据保护官",
+      "欧美隐私合规体系：数据映射、影响评估、同意管理、泄露响应与供应商尽调。"
+    ],
+    "agency-esg-sustainability-officer": [
+      "环境社会治理官",
+      "环境社会治理项目、信息披露、脱碳与利益相关方沟通。"
+    ],
+    "agency-government-digital-presales-consultant": [
+      "政务数字化售前",
+      "政策解读、方案设计、标书、概念验证、等保与密评与信创合规。"
+    ],
+    "agency-grant-writer": [
+      "基金申请写手",
+      "资助方调研、意向书、完整申请书、预算说明与结项报告。"
+    ],
+    "agency-aging-parent-care-companion": [
+      "长辈照护陪伴",
+      "帮家庭照护者协调就诊、用药与照护团队沟通，同时照顾照护者自己。"
+    ],
+    "agency-healthcare-customer-service": [
+      "医疗客服",
+      "患者支持、账单咨询、预约、保险问题与转诊升级。"
+    ],
+    "agency-healthcare-marketing-compliance-specialist": [
+      "医疗营销合规专家",
+      "广告法、医疗广告管理办法、药品管理法；药品、器械、医美、保健品与互联网医疗。"
+    ],
+    "agency-hospitality-guest-services": [
+      "酒店与宾客服务",
+      "预订、入离店、礼宾、投诉处理、会员体系与离店回访。"
+    ],
+    "agency-hr-onboarding": [
+      "入职引导",
+      "入职手续、文档管理、合规跟踪、福利登记与文化融入。"
+    ],
+    "agency-identity-graph-operator": [
+      "身份图谱运营",
+      "让多智能体系统对「这个实体是谁」拿到同一个确定答案。"
+    ],
+    "agency-language-translator": [
+      "语言翻译",
+      "西班牙语与英语实时互译，带地域方言与语气适配。"
+    ],
+    "agency-legal-billing-time-tracking": [
+      "法律计费与工时",
+      "工时记录、发票生成、计费叙述、催收与信托账户合规。"
+    ],
+    "agency-legal-client-intake": [
+      "法律客户接待",
+      "筛选潜在客户、收集案情、安排咨询、冲突检查与律师可用摘要。"
+    ],
+    "agency-legal-document-review": [
+      "法律文书审阅",
+      "合同、诉讼文书与不动产协议的摘要、风险条款标注与版本比对。"
+    ],
+    "agency-loan-officer-assistant": [
+      "信贷员助理",
+      "借款人接待、预审、材料收集、管线管理与合规跟踪。"
+    ],
+    "agency-lsp-index-engineer": [
+      "语言服务协议与索引工程师",
+      "编排语言服务客户端与语义索引，构建统一代码智能。"
+    ],
+    "agency-m-a-integration-manager": [
+      "并购整合经理",
+      "首日就绪、百日计划、协同追踪、文化整合与过渡服务协议管理。"
+    ],
+    "agency-medical-billing-coding-specialist": [
+      "医疗编码与账单专家",
+      "疾病与操作编码、理赔提交、拒付管理与收入周期优化。"
+    ],
+    "agency-operations-manager": [
+      "运营经理",
+      "精益、六西格玛与系统思维：流程梳理、产能规划、指标治理与供应商管理。"
+    ],
+    "agency-organizational-psychologist": [
+      "组织心理学家",
+      "诊断团队动力、心理安全、倦怠风险与文化健康。"
+    ],
+    "agency-personal-growth-mentor": [
+      "个人成长导师",
+      "目标澄清、习惯设计、关键决策与问责，不讲空话。"
+    ],
+    "agency-real-estate-buyer-seller": [
+      "房产买卖顾问",
+      "买方代理、卖方代理、挂牌管理、出价谈判与交割协调。"
+    ],
+    "agency-recruitment-specialist": [
+      "招聘专家",
+      "国内主流招聘平台、人才评估框架与劳动法合规。"
+    ],
+    "agency-report-distribution-agent": [
+      "报表分发代理",
+      "按区域规则把汇总销售报表自动分发给代表。"
+    ],
+    "agency-resume-tailor": [
+      "简历定制师",
+      "分析岗位描述、把真实经历映射到岗位要求、做关键词对齐，绝不编造。"
+    ],
+    "agency-retail-customer-returns": [
+      "零售退货专员",
+      "门店、线上与全渠道退换与退款，含政策执行、防欺诈与退货分析。"
+    ],
+    "agency-sales-data-extraction-agent": [
+      "销售数据抽取代理",
+      "监控表格文件并抽取本月、本年与年终关键指标。"
+    ],
+    "agency-sales-outreach": [
+      "销售外呼",
+      "冷启动、跟进、异议处理、方案撰写与销售管线管理。"
+    ],
+    "agency-chief-of-staff": [
+      "幕僚长",
+      "替老板过滤噪声、守流程、统一口径、路由决策。"
+    ],
+    "agency-civil-engineer": [
+      "土木与结构工程师",
+      "欧标、德标、美标、国标等多标准下的结构分析、岩土设计与施工文件。"
+    ],
+    "agency-codebase-archaeologist": [
+      "代码库考古学家",
+      "多个 AI 工具长期改过的仓库里做漂移检测：静默逻辑错配、死代码与文档代码背离。"
+    ],
+    "agency-cultural-intelligence-strategist": [
+      "文化智能策略师",
+      "识别隐形排斥、研究全球语境，让产品在交叉身份下也成立。"
+    ],
+    "agency-developer-advocate": [
+      "开发者关系",
+      "建开发者社区、做技术内容、优化开发者体验与平台采用率。"
+    ],
+    "agency-document-generator": [
+      "文档生成器",
+      "用代码方式生成 PDF、PPT、Word、Excel，带格式、图表与数据可视化。"
+    ],
+    "agency-fedramp-rmf-compliance-engineer": [
+      "FedRAMP 与风险管理框架合规工程师",
+      "传统路径与 20x 路径、系统安全计划、第三方评估与持续监控。"
+    ],
+    "agency-focus-music-architect": [
+      "专注音乐架构师",
+      "神经声学提示词、声景架构、节拍曲线与双耳层设计。"
+    ],
+    "agency-french-consulting-market-navigator": [
+      "法国咨询市场导航",
+      "法国技术服务与系统集成自由职业生态：利润模型、平台机制、挂靠薪资与账期现实。"
+    ],
+    "agency-korean-business-navigator": [
+      "韩国商务导航",
+      "禀议决策流程、察言观色、KakaoTalk 商务礼仪与关系优先的交易机制。"
+    ],
+    "agency-master-plan-architect": [
+      "总体方案架构师",
+      "深度架构教学、红队式风险批判，与零代码执行的实施计划撰写。"
+    ],
+    "agency-mcp-builder": [
+      "MCP 构建者",
+      "设计、构建并测试能扩展 AI 能力的模型上下文协议服务器。"
+    ],
+    "agency-model-qa-specialist": [
+      "模型质量保证专家",
+      "端到端审计机器学习与统计模型：文档、重建、复现、校准与可审计报告。"
+    ],
+    "agency-pricing-analyst": [
+      "定价分析师",
+      "市场调研、竞品分析、成本结构与毛利优化，把定价从拍脑袋变优势。"
+    ],
+    "agency-salesforce-architect": [
+      "Salesforce 架构师",
+      "多云设计、集成模式、平台限制、部署策略与数据模型治理。"
+    ],
+    "agency-strategy-duel-agent": [
+      "策略对弈",
+      "用博弈论与三十六计做实战策略推演。"
+    ],
+    "agency-workflow-architect": [
+      "工作流架构师",
+      "把每个系统与用户旅程的完整流程树画全：正常路径、分支、失败、恢复与状态。"
+    ],
+    "agency-study-abroad-advisor": [
+      "留学规划顾问",
+      "美英加澳欧港新，本硕博申请策略、选校、文书、背景提升、标化与签证。"
+    ],
+    "agency-supply-chain-strategist": [
+      "供应链策略师",
+      "供应商开发、战略采购、质量控制与供应链数字化，扎根中国制造生态。"
+    ],
+    "agency-zk-steward": [
+      "卡片盒笔记管家",
+      "卢曼式卡片盒：原子笔记、连接与校验循环，也做跨域决策支持。"
+    ],
+    "agency-analytics-reporter": [
+      "数据分析报告员",
+      "把原始数据变成可行动的洞察、看板、统计分析与指标跟踪。"
+    ],
+    "agency-executive-summary-generator": [
+      "高管摘要生成器",
+      "用情景冲突疑问解答、金字塔原理与咨询框架，把复杂输入压成给决策层的简报。"
+    ],
+    "agency-finance-tracker": [
+      "财务跟踪",
+      "财务规划、预算管理与经营绩效分析。"
+    ],
+    "agency-infrastructure-maintainer": [
+      "基础设施维护",
+      "系统可靠性、性能优化与技术运营管理。"
+    ],
+    "agency-legal-compliance-checker": [
+      "法务合规检查员",
+      "业务运营、数据处理与内容创作在多辖区下的合规。"
+    ],
+    "agency-support-responder": [
+      "客户支持响应",
+      "多渠道支持、主动客户关怀，把支持互动变成正向品牌体验。"
+    ],
+    "agency-accessibility-auditor": [
+      "无障碍审计员",
+      "按无障碍标准审界面，用辅助技术实测；没拿读屏测过就不算无障碍。"
+    ],
+    "agency-api-tester": [
+      "接口测试员",
+      "全面的接口验证、性能测试与第三方集成质量保证。"
+    ],
+    "agency-evidence-collector": [
+      "证据收集员",
+      "痴迷截图、拒绝幻想的质检：只报可复现问题，未测范围如实标注。"
+    ],
+    "agency-performance-benchmarker": [
+      "性能基准师",
+      "测量、分析并改进应用与基础设施性能。"
+    ],
+    "agency-reality-checker": [
+      "现实检查员",
+      "挡住「感觉可以上线」的批准，默认结论是需要改进，要压倒性证据。"
+    ],
+    "agency-test-automation-engineer": [
+      "测试自动化工程师",
+      "Playwright 与 Cypress：抗脆选择器、消除抖动、隔离测试数据与轨迹调试。"
+    ],
+    "agency-test-results-analyzer": [
+      "测试结果分析师",
+      "测试结果评估、质量指标分析与可行动洞察。"
+    ],
+    "agency-tool-evaluator": [
+      "工具评估师",
+      "评估、测试并推荐工具、软件与平台。"
+    ],
+    "agency-workflow-optimizer": [
+      "流程优化师",
+      "分析、优化并自动化跨职能流程。"
+    ]
+  },
+  "divisionOf": {
+    "agency-anthropologist": "academic",
+    "agency-geographer": "academic",
+    "agency-historian": "academic",
+    "agency-narratologist": "academic",
+    "agency-psychologist": "academic",
+    "agency-statistician": "academic",
+    "agency-brand-guardian": "design",
+    "agency-image-prompt-engineer": "design",
+    "agency-inclusive-visuals-specialist": "design",
+    "agency-persona-walkthrough-specialist": "design",
+    "agency-ui-designer": "design",
+    "agency-ui-finish-gate-reviewer": "design",
+    "agency-ux-architect": "design",
+    "agency-ux-researcher": "design",
+    "agency-visual-storyteller": "design",
+    "agency-whimsy-injector": "design",
+    "agency-ai-data-remediation-engineer": "engineering",
+    "agency-ai-engineer": "engineering",
+    "agency-api-platform-engineer": "engineering",
+    "agency-ats-validator-architect": "engineering",
+    "agency-autonomous-optimization-architect": "engineering",
+    "agency-backend-architect": "engineering",
+    "agency-china-network-engineer": "engineering",
+    "agency-cms-developer": "engineering",
+    "agency-code-reviewer": "engineering",
+    "agency-codebase-onboarding-engineer": "engineering",
+    "agency-data-engineer": "engineering",
+    "agency-data-visualization-engineer": "engineering",
+    "agency-database-optimizer": "engineering",
+    "agency-database-reliability-engineer": "engineering",
+    "agency-desktop-app-engineer": "engineering",
+    "agency-developer-tooling-engineer": "engineering",
+    "agency-devops-automator": "engineering",
+    "agency-drupal-performance-engineer": "engineering",
+    "agency-drupal-shopping-cart-engineer": "engineering",
+    "agency-electrical-engineer": "engineering",
+    "agency-email-intelligence-engineer": "engineering",
+    "agency-embedded-firmware-engineer": "engineering",
+    "agency-feishu-integration-developer": "engineering",
+    "agency-filament-optimization-specialist": "engineering",
+    "agency-finops-engineer": "engineering",
+    "agency-frontend-developer": "engineering",
+    "agency-gaussdb-expert-engineer": "engineering",
+    "agency-git-workflow-master": "engineering",
+    "agency-internationalization-engineer": "engineering",
+    "agency-identity-access-engineer": "engineering",
+    "agency-incident-response-commander": "engineering",
+    "agency-iot-fleet-engineer": "engineering",
+    "agency-it-service-manager": "engineering",
+    "agency-knowledge-graph-engineer": "engineering",
+    "agency-llm-post-training-engineer": "engineering",
+    "agency-minimal-change-engineer": "engineering",
+    "agency-mobile-app-builder": "engineering",
+    "agency-mobile-release-engineer": "engineering",
+    "agency-multi-agent-systems-architect": "engineering",
+    "agency-network-engineer": "engineering",
+    "agency-orgscript-engineer": "engineering",
+    "agency-payments-billing-engineer": "engineering",
+    "agency-pdf-engine-architect": "engineering",
+    "agency-platform-engineer": "engineering",
+    "agency-privacy-engineer": "engineering",
+    "agency-prompt-engineer": "engineering",
+    "agency-rag-pipeline-engineer": "engineering",
+    "agency-rapid-prototyper": "engineering",
+    "agency-realtime-collaboration-engineer": "engineering",
+    "agency-rust-refactoring-specialist": "engineering",
+    "agency-search-relevance-engineer": "engineering",
+    "agency-section-508-accessibility-specialist": "engineering",
+    "agency-senior-developer": "engineering",
+    "agency-servicenow-developer-mentor": "engineering",
+    "agency-software-architect": "engineering",
+    "agency-solidity-smart-contract-engineer": "engineering",
+    "agency-sre-site-reliability-engineer": "engineering",
+    "agency-technical-writer": "engineering",
+    "agency-universal-document-compiler": "engineering",
+    "agency-uswds-developer": "engineering",
+    "agency-video-streaming-engineer": "engineering",
+    "agency-voice-ai-integration-engineer": "engineering",
+    "agency-webassembly-engineer": "engineering",
+    "agency-wechat-mini-program-developer": "engineering",
+    "agency-wordpress-performance-engineer": "engineering",
+    "agency-wordpress-shopping-cart-engineer": "engineering",
+    "agency-bookkeeper-controller": "finance",
+    "agency-financial-analyst": "finance",
+    "agency-fp-a-analyst": "finance",
+    "agency-investment-researcher": "finance",
+    "agency-tax-strategist": "finance",
+    "agency-blender-add-on-engineer": "game-development",
+    "agency-economy-designer": "game-development",
+    "agency-game-audio-engineer": "game-development",
+    "agency-game-designer": "game-development",
+    "agency-godot-gameplay-scripter": "game-development",
+    "agency-godot-multiplayer-engineer": "game-development",
+    "agency-godot-shader-developer": "game-development",
+    "agency-level-designer": "game-development",
+    "agency-narrative-designer": "game-development",
+    "agency-roblox-avatar-creator": "game-development",
+    "agency-roblox-experience-designer": "game-development",
+    "agency-roblox-systems-scripter": "game-development",
+    "agency-technical-artist": "game-development",
+    "agency-unity-architect": "game-development",
+    "agency-unity-editor-tool-developer": "game-development",
+    "agency-unity-multiplayer-engineer": "game-development",
+    "agency-unity-shader-graph-artist": "game-development",
+    "agency-unreal-multiplayer-architect": "game-development",
+    "agency-unreal-systems-engineer": "game-development",
+    "agency-unreal-technical-artist": "game-development",
+    "agency-unreal-world-builder": "game-development",
+    "agency-3d-scene-developer": "gis",
+    "agency-gis-analyst": "gis",
+    "agency-bim-gis-specialist": "gis",
+    "agency-cartography-designer": "gis",
+    "agency-drone-reality-mapping-specialist": "gis",
+    "agency-geoai-ml-engineer": "gis",
+    "agency-geoprocessing-specialist": "gis",
+    "agency-gis-qa-engineer": "gis",
+    "agency-solution-engineer": "gis",
+    "agency-spatial-data-engineer": "gis",
+    "agency-spatial-data-scientist": "gis",
+    "agency-technical-consultant": "gis",
+    "agency-web-gis-developer": "gis",
+    "agency-clinical-evidence-agent": "healthcare",
+    "agency-healthcare-innovation-strategist": "healthcare",
+    "agency-sovereign-health-systems-agent": "healthcare",
+    "agency-aeo-foundations-architect": "marketing",
+    "agency-agentic-search-optimizer": "marketing",
+    "agency-ai-citation-strategist": "marketing",
+    "agency-app-store-optimizer": "marketing",
+    "agency-baidu-seo-specialist": "marketing",
+    "agency-bilibili-content-strategist": "marketing",
+    "agency-book-co-author": "marketing",
+    "agency-carousel-growth-engine": "marketing",
+    "agency-china-e-commerce-operator": "marketing",
+    "agency-china-market-localization-strategist": "marketing",
+    "agency-content-creator": "marketing",
+    "agency-cross-border-e-commerce-specialist": "marketing",
+    "agency-developer-community-builder": "marketing",
+    "agency-douyin-strategist": "marketing",
+    "agency-email-marketing-strategist": "marketing",
+    "agency-global-podcast-strategist": "marketing",
+    "agency-growth-hacker": "marketing",
+    "agency-instagram-curator": "marketing",
+    "agency-kuaishou-strategist": "marketing",
+    "agency-linkedin-content-creator": "marketing",
+    "agency-livestream-commerce-coach": "marketing",
+    "agency-multi-platform-publisher": "marketing",
+    "agency-podcast-strategist": "marketing",
+    "agency-pr-communications-manager": "marketing",
+    "agency-private-domain-operator": "marketing",
+    "agency-reddit-community-builder": "marketing",
+    "agency-seo-specialist": "marketing",
+    "agency-short-video-editing-coach": "marketing",
+    "agency-social-media-strategist": "marketing",
+    "agency-tiktok-strategist": "marketing",
+    "agency-twitter-engager": "marketing",
+    "agency-video-optimization-specialist": "marketing",
+    "agency-wechat-official-account-manager": "marketing",
+    "agency-weibo-strategist": "marketing",
+    "agency-x-twitter-intelligence-analyst": "marketing",
+    "agency-xiaohongshu-specialist": "marketing",
+    "agency-zhihu-strategist": "marketing",
+    "agency-paid-media-auditor": "paid-media",
+    "agency-ad-creative-strategist": "paid-media",
+    "agency-paid-social-strategist": "paid-media",
+    "agency-ppc-campaign-strategist": "paid-media",
+    "agency-programmatic-display-buyer": "paid-media",
+    "agency-search-query-analyst": "paid-media",
+    "agency-tracking-measurement-specialist": "paid-media",
+    "agency-behavioral-nudge-engine": "product",
+    "agency-dx-engineer": "product",
+    "agency-feedback-synthesizer": "product",
+    "agency-product-manager": "product",
+    "agency-sprint-prioritizer": "product",
+    "agency-trend-researcher": "product",
+    "agency-experiment-tracker": "project-management",
+    "agency-jira-workflow-steward": "project-management",
+    "agency-meeting-notes-specialist": "project-management",
+    "agency-project-shepherd": "project-management",
+    "agency-studio-operations": "project-management",
+    "agency-studio-producer": "project-management",
+    "agency-senior-project-manager": "project-management",
+    "agency-research-synthesist": "research",
+    "agency-account-strategist": "sales",
+    "agency-sales-coach": "sales",
+    "agency-deal-strategist": "sales",
+    "agency-discovery-coach": "sales",
+    "agency-sales-engineer": "sales",
+    "agency-offer-lead-gen-strategist": "sales",
+    "agency-outbound-strategist": "sales",
+    "agency-pipeline-analyst": "sales",
+    "agency-proposal-strategist": "sales",
+    "agency-ai-generated-code-security-auditor": "security",
+    "agency-application-security-engineer": "security",
+    "agency-security-architect": "security",
+    "agency-blockchain-security-auditor": "security",
+    "agency-cloud-security-architect": "security",
+    "agency-compliance-auditor": "security",
+    "agency-incident-responder": "security",
+    "agency-penetration-tester": "security",
+    "agency-secrets-credential-hygiene-engineer": "security",
+    "agency-senior-secops-engineer": "security",
+    "agency-threat-detection-engineer": "security",
+    "agency-threat-intelligence-analyst": "security",
+    "agency-macos-spatial-metal-engineer": "spatial-computing",
+    "agency-terminal-integration-specialist": "spatial-computing",
+    "agency-visionos-spatial-engineer": "spatial-computing",
+    "agency-xr-cockpit-interaction-specialist": "spatial-computing",
+    "agency-xr-immersive-developer": "spatial-computing",
+    "agency-xr-interface-architect": "spatial-computing",
+    "agency-accounts-payable-agent": "specialized",
+    "agency-agentic-identity-trust-architect": "specialized",
+    "agency-agents-orchestrator": "specialized",
+    "agency-automation-governance-architect": "specialized",
+    "agency-business-strategist": "specialized",
+    "agency-change-management-consultant": "specialized",
+    "agency-chief-financial-officer": "specialized",
+    "agency-corporate-training-designer": "specialized",
+    "agency-customer-service": "specialized",
+    "agency-customer-success-manager": "specialized",
+    "agency-data-consolidation-agent": "specialized",
+    "agency-data-privacy-officer": "specialized",
+    "agency-esg-sustainability-officer": "specialized",
+    "agency-government-digital-presales-consultant": "specialized",
+    "agency-grant-writer": "specialized",
+    "agency-aging-parent-care-companion": "specialized",
+    "agency-healthcare-customer-service": "specialized",
+    "agency-healthcare-marketing-compliance-specialist": "specialized",
+    "agency-hospitality-guest-services": "specialized",
+    "agency-hr-onboarding": "specialized",
+    "agency-identity-graph-operator": "specialized",
+    "agency-language-translator": "specialized",
+    "agency-legal-billing-time-tracking": "specialized",
+    "agency-legal-client-intake": "specialized",
+    "agency-legal-document-review": "specialized",
+    "agency-loan-officer-assistant": "specialized",
+    "agency-lsp-index-engineer": "specialized",
+    "agency-m-a-integration-manager": "specialized",
+    "agency-medical-billing-coding-specialist": "specialized",
+    "agency-operations-manager": "specialized",
+    "agency-organizational-psychologist": "specialized",
+    "agency-personal-growth-mentor": "specialized",
+    "agency-real-estate-buyer-seller": "specialized",
+    "agency-recruitment-specialist": "specialized",
+    "agency-report-distribution-agent": "specialized",
+    "agency-resume-tailor": "specialized",
+    "agency-retail-customer-returns": "specialized",
+    "agency-sales-data-extraction-agent": "specialized",
+    "agency-sales-outreach": "specialized",
+    "agency-chief-of-staff": "specialized",
+    "agency-civil-engineer": "specialized",
+    "agency-codebase-archaeologist": "specialized",
+    "agency-cultural-intelligence-strategist": "specialized",
+    "agency-developer-advocate": "specialized",
+    "agency-document-generator": "specialized",
+    "agency-fedramp-rmf-compliance-engineer": "specialized",
+    "agency-focus-music-architect": "specialized",
+    "agency-french-consulting-market-navigator": "specialized",
+    "agency-korean-business-navigator": "specialized",
+    "agency-master-plan-architect": "specialized",
+    "agency-mcp-builder": "specialized",
+    "agency-model-qa-specialist": "specialized",
+    "agency-pricing-analyst": "specialized",
+    "agency-salesforce-architect": "specialized",
+    "agency-strategy-duel-agent": "specialized",
+    "agency-workflow-architect": "specialized",
+    "agency-study-abroad-advisor": "specialized",
+    "agency-supply-chain-strategist": "specialized",
+    "agency-zk-steward": "specialized",
+    "agency-analytics-reporter": "support",
+    "agency-executive-summary-generator": "support",
+    "agency-finance-tracker": "support",
+    "agency-infrastructure-maintainer": "support",
+    "agency-legal-compliance-checker": "support",
+    "agency-support-responder": "support",
+    "agency-accessibility-auditor": "testing",
+    "agency-api-tester": "testing",
+    "agency-evidence-collector": "testing",
+    "agency-performance-benchmarker": "testing",
+    "agency-reality-checker": "testing",
+    "agency-test-automation-engineer": "testing",
+    "agency-test-results-analyzer": "testing",
+    "agency-tool-evaluator": "testing",
+    "agency-workflow-optimizer": "testing"
+  }
+}

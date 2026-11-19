@@ -1,0 +1,43 @@
+{
+  "name": "dsh-agency-skill-panel",
+  "version": "1.0.0",
+  "description": "DSH 面板：按分类浏览、搜索、开关 agency skill；关掉的技能不再注入 catalog，省 token",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis-plugin",
+    "skills",
+    "panel"
+  ],
+  "icon": "./icon.svg",
+  "type": "module",
+  "files": [
+    "host.js",
+    "client.js",
+    "index.js",
+    "cordis.patch.yml",
+    "catalog.zh.json",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  },
+  "scripts": {
+    "test": "node test-host.mjs"
+  }
+}

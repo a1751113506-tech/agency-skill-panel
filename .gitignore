@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# local state / logs
+*.log
+state.json
+probe.log
+restart-probe.log
+module.log
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# temp
+.tmp/
+*.bak
+*.bak-*
