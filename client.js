@@ -18,6 +18,8 @@ window.__ModuleLoader__.load({
       search: '搜索：中文名 / slug / 中文描述 / 英文原词…',
       clear: '清空',
       searchHit: '命中',
+      clear: '清空',
+      searchHit: '命中',
       all: '全部',
       enabled: '已启用',
       disabled: '已关闭',
@@ -53,6 +55,8 @@ window.__ModuleLoader__.load({
       title: 'Agency Library',
       subtitle: 'Browse, search and toggle the 283 agency skills',
       search: 'Search: Chinese name / slug / description / English…',
+      clear: 'Clear',
+      searchHit: 'matches',
       clear: 'Clear',
       searchHit: 'matches',
       all: 'All',
@@ -101,11 +105,24 @@ window.__ModuleLoader__.load({
       title: { fontSize: 16, fontWeight: 600, margin: 0 },
       subtitle: { fontSize: 12, color: 'var(--dsw-alias-label-secondary)' },
       searchRow: { display: 'flex', gap: 8, alignItems: 'center' },
+      inputWrap: { position: 'relative', flex: 1, minWidth: 0, display: 'flex', alignItems: 'center' },
       input: {
-        flex: 1, minWidth: 0, height: 32, padding: '0 10px',
+        width: '100%', height: 32, padding: '0 76px 0 10px',
         background: 'var(--dsw-alias-bg-layer-1)', color: 'var(--dsw-alias-label-primary)',
         border: '1px solid var(--dsw-alias-border-l2)', borderRadius: 8,
         fontSize: 13, outline: 'none', fontFamily: 'inherit',
+      },
+      inputMeta: {
+        position: 'absolute', right: 7, display: 'flex', alignItems: 'center', gap: 5,
+        fontSize: 11, color: 'var(--dsw-alias-label-tertiary)',
+        pointerEvents: 'none', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
+      },
+      inputClear: {
+        pointerEvents: 'auto', width: 18, height: 18, lineHeight: '16px', padding: 0,
+        borderRadius: 999, cursor: 'pointer', fontFamily: 'inherit', fontSize: 13,
+        background: 'var(--dsw-alias-bg-layer-2)',
+        color: 'var(--dsw-alias-label-secondary)',
+        border: '1px solid var(--dsw-alias-border-l1)',
       },
       button: {
         height: 32, padding: '0 12px', borderRadius: 8, cursor: 'pointer',
@@ -226,6 +243,96 @@ window.__ModuleLoader__.load({
       return Math.round(chars / 2.4);
     }
 
+    /* --------------------------------------------------------------- search */
+
+    /** Real CJK ideographs only. Em-dashes and full-width punctuation do NOT count. */
+    const CJK_RE = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
+
+    /**
+     * Below this many identity matches, description matches are appended.
+     * Three is deliberate: a two-letter query like "抖音" or "wechat" rarely
+     * appears in names, and hiding its strategists would look broken.
+     */
+    const MIN_STRONG = 3;
+
+    /**
+     * Split one field into latin tokens plus keep the folded string for CJK use.
+     *
+     * Latin tokens break on any non-alphanumeric AND on a camel-case hump, so
+     * "mobileAppBuilder" and "agency-mobile-app-builder" both yield
+     * [mobile, app, builder]. CJK has no delimiters, so it stays inside the
+     * token run and is additionally searched as a substring.
+     */
+    function tokenize(text) {
+      const folded = String(text).normalize('NFKC').toLowerCase();
+      const spaced = folded.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
+      const tokens = new Set();
+      for (const raw of spaced.split(/[^0-9a-z\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]+/u)) {
+        if (raw !== '') tokens.add(raw);
+      }
+      return { tokens, flat: folded };
+    }
+
+    /** Whether this term should be matched as a latin word. */
+    function isLatinTerm(term) {
+      return /^[a-z0-9][a-z0-9+#._-]*$/.test(term);
+    }
+
+    /**
+     * Find a latin term in a mixed CJK/latin field only on a word boundary.
+     *
+     * Without this, a field that happens to contain one Chinese character made
+     * the whole field substring-searchable, and "ui" matched b(ui)lding and
+     * R(ui)jie. Boundary = not preceded/followed by a latin letter or digit.
+     */
+    function latinOnBoundary(flat, term) {
+      let at = flat.indexOf(term);
+      const boundary = (ch) => ch === '' || /[0-9a-z]/.test(ch) === false;
+      while (at !== -1) {
+        const before = at > 0 ? flat[at - 1] : '';
+        const after = at + term.length < flat.length ? flat[at + term.length] : '';
+        if (boundary(before) && boundary(after)) return true;
+        at = flat.indexOf(term, at + 1);
+      }
+      return false;
+    }
+
+    /** Match one term against one already-tokenised field. */
+    function matchField(field, term) {
+      if (isLatinTerm(term) === false) {
+        return field.flat.includes(term);
+      }
+      for (const token of field.tokens) {
+        if (token === term) return true;
+        if (term.length >= 3 && token.startsWith(term)) return true;
+      }
+      if (CJK_RE.test(field.flat) && latinOnBoundary(field.flat, term)) return true;
+      return false;
+    }
+
+    /**
+     * Score one skill against every term.
+     *
+     * Returns 2 when all terms hit an identity field (name / slug / category),
+     * 1 when they only hit a description, 0 when any term misses entirely.
+     * Identity fields are pre-tokenised once per skill by the caller.
+     */
+    function rankSkill(identity, describe, terms) {
+      let allInIdentity = true;
+      let allAnywhere = true;
+      for (const term of terms) {
+        if (identity.some((f) => matchField(f, term)) === false) {
+          allInIdentity = false;
+          if (describe.some((f) => matchField(f, term)) === false) {
+            allAnywhere = false;
+            break;
+          }
+        }
+      }
+      if (allInIdentity) return 2;
+      return allAnywhere ? 1 : 0;
+    }
+
     /* ----------------------------------------------------------------- view */
 
     function Panel() {
@@ -238,6 +345,7 @@ window.__ModuleLoader__.load({
       const [openEn, setOpenEn] = useState(() => new Set());
       const [armed, setArmed] = useState(false);
       const alive = useRef(true);
+      const searchRef = useRef(null);
 
       // The confirm button disarms itself so a second accidental click cannot
       // wipe all 283 toggles.
@@ -278,17 +386,37 @@ window.__ModuleLoader__.load({
       const skills = snapshot?.skills ?? [];
 
       const visible = useMemo(() => {
-        const needle = query.trim().toLowerCase();
-        return skills.filter((skill) => {
+        const terms = query
+          .normalize('NFKC')
+          .trim()
+          .toLowerCase()
+          .split(/\s+/)
+          .filter(Boolean);
+        const base = skills.filter((skill) => {
           if (division !== '' && skill.division !== division) return false;
           if (filter === 'on' && skill.disabled) return false;
           if (filter === 'off' && !skill.disabled) return false;
-          if (needle === '') return true;
-          return skill.slug.toLowerCase().includes(needle)
-            || skill.label.toLowerCase().includes(needle)
-            || skill.desc.toLowerCase().includes(needle)
-            || skill.enDesc.toLowerCase().includes(needle);
+          return true;
         });
+        if (terms.length === 0) return base;
+
+        const strong = [];
+        const weak = [];
+        for (const skill of base) {
+          // Identity = what this skill IS. Description = what it DOES.
+          const identity = [
+            tokenize(skill.slug),
+            tokenize(skill.label),
+            tokenize(skill.divisionLabel ?? ''),
+          ];
+          const describe = [tokenize(skill.desc), tokenize(skill.enDesc ?? '')];
+          const rank = rankSkill(identity, describe, terms);
+          if (rank === 2) strong.push(skill);
+          else if (rank === 1) weak.push(skill);
+        }
+        // Name/category hits are authoritative; description-only hits are a
+        // fallback for rare terms, not peers of the real matches.
+        return strong.length >= MIN_STRONG ? strong : strong.concat(weak);
       }, [skills, query, division, filter]);
 
       const totals = useMemo(() => {
@@ -327,13 +455,48 @@ window.__ModuleLoader__.load({
             h('span', { style: styles.subtitle }, t('subtitle')),
           ),
           h('div', { style: styles.searchRow },
-            h('input', {
-              style: styles.input,
-              value: query,
-              placeholder: t('search'),
-              'aria-label': t('search'),
-              onChange: (event) => setQuery(event.target.value),
-            }),
+            h('div', { style: styles.inputWrap },
+              h('input', {
+                style: styles.input,
+                // Uncontrolled on purpose: a controlled value fights the IME and
+                // swallows Chinese input, because React writes the stale value
+                // back into the DOM while the candidate window is still open.
+                defaultValue: '',
+                ref: searchRef,
+                placeholder: t('search'),
+                'aria-label': t('search'),
+                spellCheck: false,
+                autoComplete: 'off',
+                onInput: (event) => {
+                  // Mid-composition the box only holds the pinyin buffer;
+                  // applying it would flicker the list on every keystroke.
+                  if (event.nativeEvent?.isComposing === true) return;
+                  setQuery(event.currentTarget.value);
+                },
+                onCompositionEnd: (event) => setQuery(event.currentTarget.value),
+                onKeyDown: (event) => {
+                  if (event.key === 'Escape') {
+                    event.currentTarget.value = '';
+                    setQuery('');
+                  }
+                },
+              }),
+              h('span', { style: styles.inputMeta },
+                query === '' ? null : h('span', null, visible.length, ' ', t('searchHit')),
+                query === ''
+                  ? null
+                  : h('button', {
+                      type: 'button',
+                      style: styles.inputClear,
+                      'aria-label': t('clear'),
+                      title: t('clear'),
+                      onClick: () => {
+                        if (searchRef.current !== null) searchRef.current.value = '';
+                        setQuery('');
+                      },
+                    }, '\u00d7'),
+              ),
+            ),
             h('button', {
               style: styles.button,
               type: 'button',
